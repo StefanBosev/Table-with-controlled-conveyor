@@ -1,0 +1,116 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_UNO_R3 A1
+U 1 1 607028FB
+P 4150 3750
+F 0 "A1" H 5150 4650 50  0000 C CNN
+F 1 "Arduino_UNO_R3" H 5150 4550 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3" H 4150 3750 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 4150 3750 50  0001 C CNN
+	1    4150 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MotorDriver:MD10-POT U1
+U 1 1 60706B4A
+P 5900 3100
+F 0 "U1" H 5925 3165 50  0000 C CNN
+F 1 "MD10-POT" H 5925 3074 50  0000 C CNN
+F 2 "" H 5400 3150 50  0001 C CNN
+F 3 "" H 5400 3150 50  0001 C CNN
+	1    5900 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3550 4650 3550
+Wire Wire Line
+	5000 3450 4850 3450
+Wire Wire Line
+	4850 3450 4850 3650
+Wire Wire Line
+	4850 3650 4650 3650
+Wire Wire Line
+	5000 3350 4750 3350
+Wire Wire Line
+	4750 3350 4750 5050
+Wire Wire Line
+	4750 5050 4250 5050
+Wire Wire Line
+	4250 5050 4250 4850
+NoConn ~ 3650 3150
+NoConn ~ 3650 3350
+NoConn ~ 3650 3550
+NoConn ~ 3650 3750
+NoConn ~ 3650 3850
+NoConn ~ 3650 3950
+NoConn ~ 3650 4050
+NoConn ~ 3650 4150
+NoConn ~ 3650 4250
+NoConn ~ 3650 4450
+NoConn ~ 4050 4850
+NoConn ~ 4150 4850
+NoConn ~ 3950 2750
+NoConn ~ 4050 2750
+$Comp
+L power:+5V #PWR0101
+U 1 1 60719766
+P 4250 2750
+F 0 "#PWR0101" H 4250 2600 50  0001 C CNN
+F 1 "+5V" H 4265 2923 50  0000 C CNN
+F 2 "" H 4250 2750 50  0001 C CNN
+F 3 "" H 4250 2750 50  0001 C CNN
+	1    4250 2750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6850 3400
+NoConn ~ 6850 3550
+NoConn ~ 3650 4550
+NoConn ~ 4650 4450
+NoConn ~ 4650 4350
+NoConn ~ 4650 4250
+NoConn ~ 4650 4150
+NoConn ~ 4650 4050
+NoConn ~ 4650 3950
+NoConn ~ 4650 3850
+NoConn ~ 4650 3750
+NoConn ~ 4650 3450
+NoConn ~ 4650 3350
+NoConn ~ 4650 3250
+NoConn ~ 4650 3150
+$Comp
+L power:-12V #PWR?
+U 1 1 6071C6B6
+P 6850 4000
+F 0 "#PWR?" H 6850 4100 50  0001 C CNN
+F 1 "-12V" V 6865 4128 50  0000 L CNN
+F 2 "" H 6850 4000 50  0001 C CNN
+F 3 "" H 6850 4000 50  0001 C CNN
+	1    6850 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 6071CF39
+P 6850 4150
+F 0 "#PWR?" H 6850 4000 50  0001 C CNN
+F 1 "+12V" V 6865 4278 50  0000 L CNN
+F 2 "" H 6850 4150 50  0001 C CNN
+F 3 "" H 6850 4150 50  0001 C CNN
+	1    6850 4150
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
